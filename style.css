@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+  background: linear-gradient(to right, #0052D4, #65C7F7);
+    padding: 10px;
+}
+.To-Do{
+    width: 100%;
+    max-width: 550px;
+   background-color: rgba(0, 183, 255, 0.605);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+
+.To-Do h2 {
+    display: flex;
+    color: #d2f6ff;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 5vh;
+}
+
+.To-Do h2 img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d2f6ff;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    font-weight: 14px;
+}
+
+button {
+      border: none;
+      outline: none;
+      padding: 16px 30px;
+      background: #e29df5;
+      color: #ebfeff;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 19px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 0%;
+    background-image: url(Images/square.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #d9edf8a1;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(Images/check-box-with-check-sign.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #0062ffc8;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover {
+ background-color: #65C7F7;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 5px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(100);
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(150%);
+}
